@@ -1,0 +1,65 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec; /* Light pink background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the gallery section */
+#gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Styling for the main featured image */
+figure {
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+/* Main image styling */
+#featured {
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styling for the thumbnail list */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Display thumbnails in a vertical list */
+    margin-left: 20px; /* Add some space between thumbnails and the main image */
+}
+
+/* Thumbnail image styling */
+ul li {
+    margin-bottom: 10px; /* Space between thumbnails */
+}
+
+ul li img {
+    border-radius: 10px; /* Rounded corners for thumbnails */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for thumbnails */
+ul li img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow on hover */
+}
+
+/* Caption styling */
+figcaption {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
